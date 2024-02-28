@@ -3,7 +3,7 @@ import ItemList from "./ItemList";
 
 const Content = ({items, handleCheck, handleDelete}) => {
   return (
-    <main>
+    <>
       {items.length ? (
         <ItemList items={items} handleCheck={handleCheck} handleDelete={handleDelete} />
       ) : (
@@ -11,7 +11,7 @@ const Content = ({items, handleCheck, handleDelete}) => {
             No Items in the List
         </p>
       )}
-    </main>
+    </>
   );
 };
 
